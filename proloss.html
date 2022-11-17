@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Loss</title>
+    <link rel="shortcut icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <form id="form">
+                <h1>Select Your Bussiness Type</h1>
+                <span> <b id="Agriculture">Agriculture </b>  <input type="radio" id="adf" name="a"></span><br>
+                <span> <b id="adf">Automobile  </b> <input type="radio" id="ad" name="a"></span><br>
+                <button onclick="asg()" id="button" type="button" style="margin-bottom: 2px;margin-top: 5px; cursor: pointer;">Submit</button>
+                <br>
+            </form>
+        </div>
+
+        <script>
+            function asg(){
+                if(document.getElementById("adf").checked == true) {
+                    g = "Agriculture";
+                    localStorage.setItem("agr", g);
+                    console.log(g);
+                    window.location = "calcPage.html";
+                }
+                else {
+                    h = "Automobile";
+                    localStorage.setItem("agr", h);
+                    console.log(h);
+                    window.location = "calcPage.html";
+                }
+            }
+        </script>
+    </div>
+    <style>
+        .txt_field {
+            position: relative;
+            margin: 30px 0;
+        }
+
+        
+
+        #button {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            padding: 0 5px;
+            height: 20px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+        span {
+            font-weight: bold;
+            border-bottom: 1px;
+            font-size: 15px;
+        }
+
+        h1 {
+            border-bottom: 1px solid silver;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            overflow: hidden !important;
+        }
+
+        form {
+            font-family: 'Poppins', sans-serif;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        #button {
+            color: #fff;
+            font-weight: 600;
+            background-color: #2980b9;
+            height: 40px;
+        }
+
+        .container {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 25%;
+            margin-left: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 20%;
+            background-color: #fff;
+            width: 30%;
+            border: 40%;
+            border-radius: 10px;
+        }
+        #button {
+            border-radius: 25px;
+        }
+        
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Loss</title>
+    <link rel="shortcut icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <form id="form">
+                <h1>Login</h1>
+                <div class="txt_field">
+                    <input type="text" id="username" required><label id="a" class="a">User Name</label><br>
+                    <span></span>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password" required><label id="b" class="a">Password</label><br>
+                    <span></span>
+                </div>
+                <div onclick="forgetPassword()" class="forget">Forget Password?</div>
+                <input id="button" onclick="gotocalc()" readonly value="Login">
+                <div class="signup_link">
+                    Not have an Account? <a href="#" onclick="signup()" id="sg">SignUp</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function forgetPassword() {
+            window.location = "https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&service=accountsettings&hl=en&sarp=1&scc=1&rart=ANgoxcfAxq1azw5ie1Q49WYVw6bI9f8cK7vatkUWluCru65yeBPYuiVpawV-7DYXrQbu3h9LuhRfZQWeTLX5Anf0c1vlZEy-Ow&kdi=CAM&TL=AB_wV5q1BPRVJoyO1Yxiit0EafZSm5aejlzAcWaFtozXhnynnirzDSRcetMjas9V&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin"
+        }
+        function signup() {
+            window.location = "https://support.google.com/accounts/answer/27441?hl=en#"
+        }
+        var pass H = document.getElementById("password").value;
+        function gotocalc() {
+            window.location = "proloss.html";
+            localStorage.setItem("E", document.getElementById("username").value);
+        }
+    </script>
+</body>
+
+</html>

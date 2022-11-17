@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Loss</title>
+    <link rel="shortcut icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class="container scrlbar">
+        <h1>Enter Your CP</h1>
+
+        <span>
+            ₹
+            <label class="abc">Cost Price for <marquee direction="right">Raw Material</marquee></label>
+            <input type="number" required placeholder="Numbers Only!!!" class="input_value">
+        </span><br>
+
+        <span>
+            ₹
+            <label class="abc">Cost Price for Transportation for Raw Material</label>
+            <marquee>to Factory</marquee>
+            <input type="number" placeholder="Numbers Only!!!" required class="input_value">
+        </span><br>
+
+
+        <span>
+            ₹ 
+            <label class="abc">Cost Price for</label>
+            <marquee direction="right">Creating Product</marquee>
+            <input type="number" required class="input_value" placeholder="Numbers Only!!!">
+        </span><br>
+
+        <span>
+            ₹ 
+            <label class="abc">Cost Price for</label>
+            <marquee direction="left">Sealing Product</marquee>
+            <input type="number" required class="input_value" placeholder="Numbers Only!!!">
+        </span><br><br>
+
+        <div id="ajawer"><buttton type="button" id="button" onclick="sbt()">Submit</button></div>
+    </div>
+
+    <script>
+        function sbt() {
+            if()
+        }
+    </script>
+
+    <style>
+        #ajawer:hover {
+            cursor: not-allowed;
+        }
+        #ajawer {
+            width: 80%;
+        }
+        #button {
+            color: #fff;
+            font-weight: 600;
+            background-color: #2980b9;
+            text-align: center;
+            border: 2px solid #297fb9;
+            border-radius: 25px;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 35px;
+            margin-top: 7px;
+            margin-bottom: 4px;
+            opacity: 0.6;
+            cursor: not-allowed;
+            height: 40px !important;
+            width: 80% !important;
+            pointer-events: none;
+        }
+        #button:hover {
+            cursor: not-allowed;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 6px 6px;
+        }
+
+        input[type="numuber"] {
+            border: none;
+            position: relative;
+            color: #000;
+            transition: .4s;
+            -moz-appearance: textfield;
+        }
+
+        input::-webkit-input-placeholder {
+            top: 10px;
+            margin-bottom: 2px;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input {
+            transition: 1s;
+        }
+
+        input:focus ~ input::-webkit-input-placeholder {
+            padding: 7px 7px;
+        }
+
+        .input_value {
+            outline: 2px solid silver;
+            border: none;
+            width: 80%;
+            margin-left: 8%;
+            padding: 5px 4px;
+            outline-color: darkblue;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            overflow: hidden;
+        }
+
+        .container {
+            margin-top: 22%;
+            margin-left: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 20%;
+            background-color: #fff;
+            width: 30%;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</body>
+
+</html>
